@@ -1,4 +1,4 @@
-package com.backend.i2tlunchs.Pedido.PedidoEntity;
+package com.backend.i2tlunchs.Model.PedidoEntity;
 
 import java.util.Date;
 

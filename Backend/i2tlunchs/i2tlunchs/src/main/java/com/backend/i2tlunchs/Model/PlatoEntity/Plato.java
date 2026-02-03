@@ -1,4 +1,4 @@
-package com.backend.i2tlunchs.Plato.PlatoEntity;
+package com.backend.i2tlunchs.Model.PlatoEntity;
 
 import java.util.Date;
 

@@ -1,4 +1,4 @@
-package com.backend.i2tlunchs.User.UserEntity;
+package com.backend.i2tlunchs.Model.UserEntity;
 
 import java.util.Collection;
 import java.util.List;
