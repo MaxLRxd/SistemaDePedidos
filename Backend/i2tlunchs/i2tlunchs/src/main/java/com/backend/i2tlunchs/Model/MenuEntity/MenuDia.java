@@ -1,4 +1,6 @@
-package com.backend.i2tlunchs.Model.PlatoEntity;
+package com.backend.i2tlunchs.Model.MenuEntity;
+
+import java.sql.Date;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -14,21 +16,21 @@ import lombok.NoArgsConstructor;
 @Entity
 @Data
 @Builder
-@NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "plato")
-public class Plato {
+@NoArgsConstructor
+@Table(name = "menudia")
+public class MenuDia {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long idPlato;
-    @Column(name = "nombre", nullable = false)
-    private String nombre;
-    @Column(name = "descripcion", length = 200)
+    private Long idMenuDia;
+    //RELACION
+    private Long idUsuario;
+    @Column(name = "fecha")
+    private Date fecha;
+    @Column(name = "descripcion")
     private String descripcion;
-    @Column(name = "imagen")
-    private String imagen;
-    @Column(name = "categoria")
-    private String categoria;
-
-    //FALTAN RELACIONES
+    @Column(name = "publicado")
+    private Boolean publicado;
+    @Column(name = "stock_total")
+    private Long stockTotal;
 }
