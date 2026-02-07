@@ -40,13 +40,11 @@ public class Pedido {
     @Column(name = "cantidad_personas")
     private int cantidadPersonas;
 
-
-    //FALTAN RELACIONES
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_usuario", referencedColumnName = "id_usuario", nullable = false)
     private User usuarioPedido;
 
     @OneToMany(mappedBy = "pedidoDia", fetch = FetchType.LAZY)
     private List<PedidoDia> pedidos = new ArrayList<>();
-    
+
 }
